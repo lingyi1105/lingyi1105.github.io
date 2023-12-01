@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--     <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-154445213-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-154445213-2");
+    </script> -->
+
+    <meta charset="utf-8" />
+    <title>ChromeSafe</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="bold-line"></div>
+    <div class="container">
+      <div class="window">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="welcome">ChromeSafe</div>
+          <div class="subtitle">
+            Save passwords in your Google account manually! 
+<!--             Click
+            <a
+              href="https://youtu.be/oAI_YE-alqU"
+              target="_blank"
+              class="highlight"
+              >here</a
+            >
+            for help. -->
+          </div>
+          <div class="input-fields">
+            <input
+              type="text"
+              onchange="concatTitleAndUsername()"
+              placeholder="Title"
+              id="title"
+              class="input-line full-width"
+            />
+            <input
+              type="text"
+              id="username"
+              name="username"
+              onchange="concatTitleAndUsername()"
+              placeholder="Username"
+              class="input-line full-width"
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              class="input-line full-width"
+            />
+          </div>
+          <div class="spacing">
+            <p>
+              A thingy by
+              <a href="https://www.lukelopez.dev" class="highlight"
+                >Luke Lopez</a
+              >
+            </p>
+            <p>
+              View
+              <a
+                href="https://github.com/lukeclopez/ChromeSafe"
+                class="highlight"
+                >Source</a
+              >
+              on GitHub
+            </p>
+            <p>
+              Design by
+              <a href="https://codepen.io/Tbgse/pen/JXrJGX" class="highlight"
+                >Tobias</a
+              >
+            </p>
+          </div>
+          <div>
+            <form action="" method="get">
+              <button
+                class="ghost-round full-width"
+                onclick="history.replaceState({}, null, '/success.html');"
+              >
+                Save Password
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
